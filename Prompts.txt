@@ -1,0 +1,24 @@
+Me: I have an XML file, could you please create a java app that
+	reads this file and print out the field values.
+
+AI: Certainly! Here's some sample Java code that demonstrates 
+	how to read an XML file and extract field values using the Java DOM API:
+
+	[Code ommited]
+
+	In this example, the XML file is called "input.xml". You will need to modify the code to match the structure and naming of your XML file.
+
+	The code uses the DOM API to read the XML file and extract field values. The NodeList object contains all of the nodes in the XML file with the tag name "employee". The 	code then loops through each node in the list and extracts the child nodes, printing out their tag name and text content.
+
+	Note that this is just a simple example, and you may need to modify the code to handle more complex XML structures.
+
+Me: Could you modify the code above  to only output user-selected fields from that XML file.
+
+AI: Sure, here's a modified version of the code that allows the user to specify which fields they want to output:
+    [Code ommited]
+
+    This code prompts the user to enter a comma-separated list of fields they want to output (e.g. "name,email,phone"). The code then splits the list into an array of strings and uses it to filter the output of the XML file.
+
+    Inside the loop that processes the child nodes, the code checks each child node against the list of user-selected fields. If the child node matches one of the selected fields, the code prints out its tag name and text content.
+
+Me: Could you change the output to be in the JSON format, for me?
